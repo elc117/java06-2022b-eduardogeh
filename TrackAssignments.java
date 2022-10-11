@@ -61,7 +61,7 @@ class GroupAssignment extends Assignment {
     private String teamMates;
 
     public String message() {
-        return "Group Assignment "+ super.getDescription() +" is "+ super.status() +" - call " + teamMates;
+        return "Group"+ super.message()+ " - call " + teamMates;
     }
 
     public GroupAssignment(LocalDate dueDate, String description, String teamMates) {
